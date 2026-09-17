@@ -1,0 +1,31 @@
+-- Programa 1: Análisis completo de ventas
+-- Este programa carga un archivo CSV, realiza cálculos estadísticos,
+-- filtra y ordena los datos, y genera un reporte.
+
+cargar "ventas_2024.csv";
+
+-- Cálculos estadísticos básicos
+calcular promedio de precio;
+calcular mediana de precio;
+calcular desviacion de precio;
+calcular suma de ventas;
+calcular conteo de registros;
+
+-- Filtrado de datos
+filtrar precio > 100 y categoria == "electrónica";
+filtrar cantidad >= 5;
+
+-- Ordenamiento
+ordenar precio descendente;
+
+-- Agrupación
+agrupar por departamento;
+
+-- Visualización
+graficar barras de ventas;
+graficar lineas de precio;
+
+-- Exportar resultados
+exportar "reporte_ventas.csv";
+
+mostrar datos;

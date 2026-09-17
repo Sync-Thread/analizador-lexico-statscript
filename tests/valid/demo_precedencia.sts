@@ -1,0 +1,14 @@
+-- Análisis estadístico de rendimiento académico
+cargar "calificaciones_2024.csv";
+
+calcular promedio de calificacion;
+calcular desviacion de calificacion;
+
+filtrar calificacion >= 70 y asistencia > 80;
+ordenar calificacion descendente;
+agrupar por materia;
+
+nota_final = (calificacion + extra) * 0.5;
+
+graficar barras de calificacion;
+exportar "reporte_academico.csv";

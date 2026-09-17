@@ -1,0 +1,42 @@
+<-- Programa 2: Análisis de rendimiento académico
+    Este programa demuestra el uso de comentarios de bloque,
+    múltiples funciones estadísticas y tipos de gráficas. -->
+
+cargar "calificaciones.csv";
+
+-- Estadísticas descriptivas completas
+calcular promedio de calificacion;
+calcular mediana de calificacion;
+calcular moda de calificacion;
+calcular varianza de calificacion;
+calcular minimo de calificacion;
+calcular maximo de calificacion;
+calcular correlacion de asistencia, calificacion;
+
+-- Filtrar aprobados y reprobados
+filtrar calificacion >= 70;
+filtrar asistencia > 80 o calificacion >= 90;
+filtrar no reprobado;
+filtrar calificacion < 60;
+filtrar calificacion <= 50;
+filtrar calificacion != 0;
+
+-- Operaciones con expresiones aritméticas
+resultado = (calificacion + extra) * 0.5;
+calcular promedio de calificacion - extra;
+calcular suma de calificacion / 100;
+calcular conteo de calificacion % 10;
+
+-- Ordenar y agrupar
+ordenar calificacion ascendente;
+agrupar por materia;
+agrupar por semestre;
+
+-- Distintos tipos de gráficas
+graficar histograma de calificacion;
+graficar pastel de materia;
+graficar dispersion de asistencia, calificacion;
+
+-- Resultado final
+mostrar columnas;
+exportar "rendimiento_academico.csv";

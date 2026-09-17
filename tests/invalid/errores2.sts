@@ -1,0 +1,19 @@
+-- Programa con errores: Identificadores inválidos y cadenas sin cerrar
+-- Este archivo contiene errores de distintos tipos para verificar
+-- la utilidad de los mensajes de error del lexer.
+
+-- Error: identificadores que comienzan con dígitos
+calcular promedio de 123abc;
+filtrar 456columna > 100;
+
+-- Error: cadena sin cerrar (la comilla nunca se cierra)
+cargar "archivo_sin_cerrar.csv;
+
+-- Mezcla de código válido con errores
+mostrar datos;
+filtrar $precio > 50;
+calcular 99total de ventas;
+exportar "resultado.csv";
+
+-- Error: comentario de bloque sin cerrar (al final del archivo)
+<-- Este comentario nunca se cierra

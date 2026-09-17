@@ -1,0 +1,7 @@
+-- Análisis de ventas con errores intercalados
+cargar "ventas_2024.csv";
+calcular promedio de precio;
+filtrar precio > y categoria == "electrónica";
+ordenar precio descendente;
+graficar de ventas;
+exportar "reporte_final.csv";

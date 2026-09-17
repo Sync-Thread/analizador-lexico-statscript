@@ -1,0 +1,9 @@
+-- Programa con errores: Símbolos no reconocidos
+-- Este archivo contiene múltiples errores léxicos con símbolos que
+-- no pertenecen al lenguaje StatScript.
+
+cargar $datos;
+filtrar @edad > 30;
+calcular #promedio de salario;
+mostrar ~resultados;
+exportar &reporte;
