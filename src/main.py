@@ -65,9 +65,11 @@ def analyze(source, label=""):
         if parser.tiene_errores():
             print("\n  Errores sintácticos encontrados:")
             print_parser_errors(parser.errores)
+            print(f"\n  >> No se pudo generar el árbol sintáctico debido a errores sintácticos.")
         else:
             print()
             imprimir_ast(ast)
+            print(f"\n  >> Árbol sintáctico generado exitosamente.")
 
         print(f"\n{'-' * 60}")
         print("Error List (sintácticos):")
@@ -76,6 +78,7 @@ def analyze(source, label=""):
         print(f"\n{'-' * 60}")
         print("Análisis Sintáctico (AST):")
         print("  Se omite el análisis sintáctico debido a errores léxicos.")
+        print(f"\n  >> No se pudo generar el árbol sintáctico debido a errores léxicos.")
 
 
 def main():
